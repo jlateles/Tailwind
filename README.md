@@ -30,3 +30,6 @@
 - Animation
     => como aplicar a animação ping do Tailwind e também como customizar e criar nossas próprias animações.
   
+# Certificado
+
+<img src="https://github.com/jlateles/Tailwind/blob/main/img/J%C3%BAlia%20Teles%20da%20Silva%20Bispo%20-%20Curso%20Tailwind%20CSS_%20estilizando%20a%20sua%20p%C3%A1gina%20com%20classes%20utilit%C3%A1rias%20-%20Alura_page-0001.jpg">
