@@ -1,41 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
+       tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         primary: '#f2dae7'
                     },
                     fontFamily: {
-                        titulo: ['Vast Shadow', 'cursive']
-                    }
+                        titulo: ['Vast Shadow', 'cursive']                    
+                    },
+                    keyframes: {
+                        sino_kf: {
+                            '0%, 100%': {
+                                transform: 'rotate(-10deg)'
+                            },
+                            '50%': {
+                                transform: 'rotate(10deg)'
+                            },
+                        }
+                    },
+                    animation: {
+                        sino: 'sino_kf 0.31s ease-in-out infinite'
+                    },
                 }
             }
         }
+
     </script>
-
 </head>
-
 <body>
-    <div class="flex w-fit m-auto my-12 items-center justify-center shadow-2xl">
-        <img class="h-44" src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380" alt="codigo json">
-        <div class="p-10 my-10 flex flex-col w-2/5 bg-gradient-to-r from-pink-300 to-slate-400 justify-center h-44 ga-6 rounded-r-xl">
-            <p class="text-6x1 font-black text-primary font-titulo">Júlia Teles</p>
-            <p class="text-4xl mb-2">Desenvolvedora Front-End</p>
-            <ul class="flex gap-3 mb-4">
-                <li><a class="hover:font-bold hover:text-primary" href="https://www.linkedin.com/in/jlateles/">Linkedin</a></li>
-                <li><a class="hover:font-bold hover:text-primary" href="https://github.com/jlateles">Github</a></li>
-              </ul>
-        </div>
+  <div class="flex w-fit m-auto my-10 shadow-2xl">
+    <img class="h-44" src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380" alt="codigo json">
+    <div class="p-10 flex flex-col bg-gradient-to-r from-pink-300 to-slate-400 justify-center h-44 ">
+      <p class="text-6xl font-black text-primary font-titulo">Júlia</p>
+      <p class="text-4xl mb-4">Desenvolvedora Front-end</p>
+      <ul class="flex gap-3 mb-4 group">
+        <li class="group-hover:animate-sino"><a class="hover:font-bold hover:text-primary" href="https://www.linkedin.com/in/jlateles/">Linkedin</a></li>
+        <li class="group-hover:animate-sino"><a class="hover:font-bold hover:text-primary" href="https://github.com/jlateles">Github</a></li>
+      </ul>
     </div>
+  </div>
 </body>
-
-</html>
