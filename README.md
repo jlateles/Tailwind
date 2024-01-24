@@ -1,6 +1,7 @@
 # Julia Newsletter!
 
-- Alura | Curso: Tailwind CSS: estilizando a sua página com classes utilitárias
+- Alura
+- Curso: Tailwind CSS: estilizando a sua página com classes utilitárias
 
 # O que foi estudado?
 
